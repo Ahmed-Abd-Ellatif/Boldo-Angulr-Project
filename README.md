@@ -4,6 +4,8 @@
 
 **Demo Link:** https://boldo-angulr-project.vercel.app/home
 
+
+**To view the Diagram in better quality, click on it**
 ![Untitled Diagram drawio](https://github.com/Ahmed-Abd-Ellatif/Boldo-Angulr-Project/assets/61418344/e283c8c3-a260-485d-9f8b-45f4fad630a2)
 
 **I created 3 modules** 
