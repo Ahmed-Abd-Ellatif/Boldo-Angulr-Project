@@ -1,0 +1,23 @@
+<section class="opinion">
+  <div class="container">
+    <h2>An enterprise template to ramp up your company website</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let card of cardData">
+        <div class="card-title">
+          <p>
+            {{ card.title }}
+          </p>
+        </div>
+        <div class="card-info">
+          <div class="info-img">
+            <img [src]="card.imgUrl" alt="" />
+          </div>
+          <div class="info-text">
+            <p>{{ card.name }}</p>
+            <span>{{ card.position }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

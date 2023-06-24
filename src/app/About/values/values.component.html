@@ -1,0 +1,23 @@
+<section class="values">
+  <div class="container">
+    <p>Our values</p>
+    <h2>Things in we believe</h2>
+    <p>
+      Conversion angel investor entrepreneur first mover advantage. Handshake
+      infographic mass market crowdfunding iteration. Traction stock user
+      experience deployment beta innovator incubator focus.
+    </p>
+
+    <div class="cards">
+      <div class="card" *ngFor="let card of cardData">
+        <div class="card-img">
+          <img [src]="card.imgUrl" />
+        </div>
+        <div class="card-text">
+          <p>{{ card.title }}</p>
+          <span>{{ card.desc }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

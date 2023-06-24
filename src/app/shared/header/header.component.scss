@@ -1,0 +1,144 @@
+@import "../../../assets/styles/variables.scss";
+header {
+  background-color: $main-color;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo {
+      cursor: pointer;
+    }
+    .header-menu {
+      display: flex;
+      align-items: center;
+      p {
+        margin-right: 32px;
+        color: $white-color;
+        cursor: pointer;
+        &.active {
+          color: $green-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: $main-color;
+}
+
+// ==================================
+// ==================================
+// ==================================
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $main-color;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+label.logo {
+  color: $white-color;
+  padding-left: 16px;
+}
+label.logo img {
+  padding-top: 10px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: $white-color;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover,
+  &.active {
+    color: $green-color;
+  }
+}
+
+.checkbtn {
+  width: 30px;
+  height: 30px;
+  color: $white-color;
+  float: right;
+  line-height: 80px;
+  margin-right: 16px;
+  cursor: pointer;
+  display: none;
+}
+.checkbtn img {
+  width: 100%;
+  height: 100%;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 16px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    &:hover,
+    &.active {
+      color: $green-color;
+    }
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+nav ul button {
+  margin-left: 32px;
+  padding: 16px 48px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  background-color: $white-color;
+  &:hover {
+    background-color: $green-color;
+    color: $white-color;
+  }
+}

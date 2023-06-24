@@ -1,0 +1,23 @@
+<section class="letes-news">
+  <div class="container">
+    <h2>Letest News</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let card of cradData">
+        <div class="card-img">
+          <img [src]="card.imgUrl" />
+        </div>
+        <div class="card-text">
+          <p>
+            Category <span>N{{ card.dateTime }}</span>
+          </p>
+          <h4>{{ card.desc }}</h4>
+          <div class="user">
+            <img [src]="card.userImg" />
+            <p>{{ card.userName }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button>Load More</button>
+  </div>
+</section>

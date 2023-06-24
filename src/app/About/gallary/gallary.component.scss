@@ -1,0 +1,44 @@
+.gallary {
+  padding-top: 90px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .first-dev,
+    .third-dev {
+      width: 275px;
+      img {
+        width: 100%;
+        &:first-child {
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .second-dev {
+      width: 330px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .gallary {
+    padding-top: 32px;
+    .container {
+      flex-direction: column;
+
+      .first-dev,
+      .third-dev {
+        width: 100%;
+      }
+      .second-dev {
+        width: 100%;
+        margin: 32px 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../../assets/styles/variables.scss";
+.blog {
+  padding: 90px 0;
+  .container {
+    text-align: center;
+    border-bottom: 1px solid $black-color;
+    padding-bottom: 90px;
+    p {
+      font-size: clamp(16px, 4vw, 19px);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: clamp(24px, 4vw, 48px);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .card-img {
+        width: 540px;
+        margin-right: 32px;
+        img {
+          width: 100%;
+        }
+      }
+      .card-text {
+        width: 50%;
+        text-align: start;
+        p {
+          font-size: clamp(12px, 4vw, 16px);
+          font-weight: 700;
+          margin-bottom: 8px;
+          span {
+            color: $gray-color;
+            font-weight: 400;
+          }
+        }
+        h3 {
+          font-size: clamp(20px, 4vw, 40px);
+          font-weight: 400;
+          margin-bottom: 32px;
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 16px;
+          }
+          span {
+            font-size: clamp(12px, 4vw, 16px);
+            font-weight: 400;
+            color: $gray-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .blog {
+    .container {
+      .card {
+        flex-direction: column;
+        .card-img {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
+        .card-text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

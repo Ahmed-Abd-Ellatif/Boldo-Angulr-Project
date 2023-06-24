@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables.scss";
+.story {
+  padding-top: 90px;
+  .container {
+    p {
+      font-size: clamp(16px, 4vw, 19px);
+      font-weight: 400;
+      color: $gray-color;
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
+    h2 {
+      font-size: clamp(24px, 4vw, 48px);
+      font-weight: 400;
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .story {
+    padding-top: 32px;
+  }
+}

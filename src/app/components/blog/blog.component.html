@@ -1,0 +1,28 @@
+<section class="blog">
+  <div class="container">
+    <div class="head">
+      <p>Our Blog</p>
+      <h2>Value proposition accelerator product management venture</h2>
+    </div>
+    <div class="cards">
+      <div class="card" *ngFor="let card of cardData">
+        <div class="card-img">
+          <img [src]="card.imgCard" />
+        </div>
+        <div class="card-text">
+          <p class="first-text">
+            {{ card.category }}
+            <span>{{ card.dateTime }}</span>
+          </p>
+          <p class="second-text">
+            {{ card.desc }}
+          </p>
+          <div class="card-user">
+            <img [src]="card.userImg" />
+            <p>{{ card.userName }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

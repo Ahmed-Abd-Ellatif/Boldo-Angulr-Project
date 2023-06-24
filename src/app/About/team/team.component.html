@@ -1,0 +1,20 @@
+<section class="team">
+  <div class="container">
+    <p>Our team</p>
+    <h2>The leadership team</h2>
+    <p>
+      Conversion angel investor entrepreneur first mover advantage. Handshake
+      infographic mass market crowdfunding iteration. Traction stock user
+      experience deployment beta innovator incubator focus.
+    </p>
+    <div class="conatain">
+      <div class="cards">
+        <div class="card" *ngFor="let card of cardData">
+          <img [src]="card.imgUrl" />
+          <p>{{ card.name }}</p>
+          <span>{{ card.jobTitle }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

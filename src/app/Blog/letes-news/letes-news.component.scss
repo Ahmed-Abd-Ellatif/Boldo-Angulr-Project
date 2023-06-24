@@ -1,0 +1,72 @@
+@import "../../../assets/styles/variables.scss";
+.letes-news {
+  .container {
+    h2 {
+      font-size: clamp(24px, 4vw, 48px);
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      .card {
+        width: 335px;
+        // margin-bottom: 32px;
+        .card-img {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        .card-text {
+          p {
+            font-size: clamp(12px, 4vw, 16px);
+            font-weight: 700px;
+            margin-bottom: 16px;
+            span {
+              font-weight: 400;
+              color: $gray-color;
+            }
+          }
+          h4 {
+            font-size: clamp(16px, 4vw, 19px);
+            font-weight: 400px;
+            margin-bottom: 16px;
+          }
+          .user {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 16px;
+            }
+            p {
+              font-size: clamp(12px, 4vw, 16px);
+              font-weight: 400px;
+              color: $gray-color;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    button {
+      background-color: transparent;
+      padding: 16px 48px;
+      color: $main-color;
+      border-radius: 30px;
+      border: 2px solid $main-color;
+      margin: 32px auto 0;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        background-color: $main-color;
+        color: $white-color;
+        border: 2px solid $white-color;
+      }
+    }
+  }
+}

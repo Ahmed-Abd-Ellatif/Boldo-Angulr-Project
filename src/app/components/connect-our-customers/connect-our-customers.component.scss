@@ -1,0 +1,95 @@
+@import "../../../assets/styles/variables.scss";
+.connect-our-customers {
+  margin-top: 90px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    .left-side {
+      width: 400px;
+      img {
+        width: 100%;
+      }
+    }
+    .right-side {
+      width: 50%;
+      h3 {
+        font-size: clamp(20px, 4vw, 40px);
+        font-weight: 400;
+        color: $black-color;
+        margin-bottom: 32px;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        font-size: clamp(16px, 4vw, 23px);
+        font-weight: 400;
+        color: $black-color;
+        margin-bottom: 16px;
+        img {
+          width: 33px;
+          margin-right: 16px;
+        }
+      }
+      .shadow {
+        background-color: $white-color;
+        padding: 24px 8px;
+        border-radius: 5px;
+        box-shadow: 1px 6px 10px #5c5c5c31;
+        margin-bottom: 24px;
+        &:hover {
+          background-color: $main-color;
+          color: $white-color;
+          cursor: pointer;
+        }
+      }
+      button {
+        background-color: $main-color;
+        border: none;
+        color: $white-color;
+        padding: 16px 48px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .connect-our-customers {
+    margin-top: 50px;
+    .container {
+      flex-direction: column;
+      gap: 32px;
+      .left-side {
+        width: 400px;
+      }
+      .right-side {
+        width: 80%;
+        h3 {
+          margin-bottom: 16px;
+        }
+        p {
+          margin-bottom: 8px;
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .connect-our-customers {
+    .container {
+      .left-side {
+        width: 100%;
+      }
+      .right-side {
+        width: 100%;
+      }
+    }
+  }
+}

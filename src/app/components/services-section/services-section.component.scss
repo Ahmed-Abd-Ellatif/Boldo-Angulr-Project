@@ -1,0 +1,31 @@
+@import "../../../assets/styles/variables.scss";
+.services {
+  text-align: center;
+  margin-top: 90px;
+  p {
+    font-size: clamp(16px, 4vw, 19px);
+    font-weight: 400;
+    margin-bottom: 32px;
+    color: $gray-color;
+  }
+  h2 {
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: 400;
+    margin-bottom: 48px;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    margin-top: 32px;
+
+    .cards {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
